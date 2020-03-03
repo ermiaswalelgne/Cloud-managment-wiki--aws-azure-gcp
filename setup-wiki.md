@@ -52,21 +52,21 @@ Now try again:
 
 
 ### Generate public and private key ubuntu
-- Step 1 — Create the RSA Key Pair
-	-> `ssh-keygen` You press enter for all and keep the deafult
-	-> CD to home directory `cd` enter
-	-> ls -a should give you the `.ssh` directory.
-	-> you can `cd .ssh` to see the private and public key files.
-	-> pbcopy < id_rsa.pub` will copy the public key to clipboard.
+- Step 1 — Create the RSA Key Pair: <br>
+	- > `ssh-keygen` You press enter for all and keep the deafult
+	- > CD to home directory `cd` enter
+	- > ls -a should give you the `.ssh` directory.
+	- > you can `cd .ssh` to see the private and public key files.
+	- > pbcopy < id_rsa.pub` will copy the public key to clipboard.
 	- **Note** If pbcopy is not installed follow the following steps
-	-> `sudo apt-get install xclip -y`
-	-> 'vim ~/.bashrc' and add the following two alias at the end of the linefor pbcopy command to work
-	--> 'alias pbcopy='xclip -selection clipboard'
-	--> 'alias pbpaste='xclip -selection clipboard -o'
-	-> Save and exit and now refresh the bash to import the new setting using
+	- > `sudo apt-get install xclip -y`
+	- > 'vim ~/.bashrc' and add the following two alias at the end of the linefor pbcopy command to work
+	-- > 'alias pbcopy='xclip -selection clipboard'
+	-- > 'alias pbpaste='xclip -selection clipboard -o'
+	- > Save and exit and now refresh the bash to import the new setting using
 	--> `source ~/.bashrc`
- - Step 2 Copy the Public Key to Ubuntu Server
-	-> we can use `ssh-copy-id` command:
-	--> `ssh-copy-id username@remote_server`
-	-> If `ssh-copy-id` is not available, we can use ssh. First use cat command to read contentes of pblic SSH key on our computer. Then pip that through SSH conncetion to the remote server
-	-->`cat ~/.ssh/id_rsa.pub | ssh username@remote_host "mkdir -p ~/.ssh && touch ~/.ssh/authorized_keys && chmod -R go= ~/.ssh && cat >> ~/.ssh/authorized_keys"`
+ - Step 2 Copy the Public Key to Ubuntu Server <br>
+	- > we can use `ssh-copy-id` command:
+	-- > `ssh-copy-id username@remote_server`
+	- > If `ssh-copy-id` is not available, we can use ssh. First use cat command to read contentes of pblic SSH key on our computer. Then pip that through SSH conncetion to the remote server
+	-- >`cat ~/.ssh/id_rsa.pub | ssh username@remote_host "mkdir -p ~/.ssh && touch ~/.ssh/authorized_keys && chmod -R go= ~/.ssh && cat >> ~/.ssh/authorized_keys"`
