@@ -1,17 +1,17 @@
-I don't know but it works somehow for some reason and 
-that is the case here haha
+### Install vim
+`sudo apt-get update` 
+`sudo apt-get install vim`
 
-sudo apt-get update 
-sudo apt-get install vim
-
-if this returns an error
+if the above command returns an error
 do the following:
-	Press> alt+f2
-	Type> 'software-properties-gtk'
-	And check all the boxs
+	- Press> alt+f2
+	- Type> `software-properties-gtk`
+	- And check all the boxs
 Now try again:
-- install pip3 on ubuntu:
+
+#### Install pip3 on ubuntu:
 	- `apt-get install python3-pip`
+
 ####Install Anacodna on Ubuntu
 	- cd /tmp
 	-Dowload the file using curl:
@@ -27,6 +27,7 @@ Now try again:
 	-> You can now activate the installation by sourcing the ~/.bashrc file:
 	--> source ~/.bashrc
 	-> Verify conda is installed using `conda list` command
+
 ### Setting Up Anaconda Environments
 	- check to see which versions of Python are available for us to use:
 	-> `conda search "^python$"`
@@ -48,6 +49,7 @@ Now try again:
 	-> you can now remove your entrie Anacodna directory by entering `rm -rf ~/anaconda3` 
 	-> Finally you can remove the PAH line from your `.bashrc` file that anaconda added. To do so, first open a text editor
 	--> `vim ~/.bashrc` scroll down till uo see @ added by Anaconda and remove the export line
+
 
 ### Generate public and private key ubuntu
 - Step 1 — Create the RSA Key Pair
