@@ -12,23 +12,23 @@ Now try again:
 #### Install pip3 on ubuntu:
 	- `apt-get install python3-pip`
 
-####Install Anacodna on Ubuntu
+#### Install Anacodna on Ubuntu
 	- cd /tmp
-	-Dowload the file using curl:
-	-> curl -O https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh
-	-Verify data integrity using sha256
-	->sha256sum Anaconda3-2019.03-Linux-x86_64.sh
-	-Go to [Anconda with Python 3](https://docs.anaconda.com/anaconda/install/hashes/lin-3-64/)Check the output of the above sha256 code match with the anacodna version we have installed (in this case Anacodna3-2019-03-Linux86_64.sh), it should match
-	-Now run the bash script
-	-> bash Anaconda3-2019.03-Linux-x6_64.sh
+	- Dowload the file using curl:
+	-> `curl -O https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh`
+	- Verify data integrity using sha256
+	-> `sha256sum Anaconda3-2019.03-Linux-x86_64.sh`
+	- Go to [Anconda with Python 3](https://docs.anaconda.com/anaconda/install/hashes/lin-3-64/)Check the output of the above sha256 code match with the anacodna version we have installed (in this case Anacodna3-2019-03-Linux86_64.sh), it should match
+	- Now run the bash script
+	-> `bash Anaconda3-2019.03-Linux-x6_64.sh`
 	-> we should see welcome of python
 	-> Press enter to continue and write Yes to accepte and choose (or accept the default locaion) for instalation.
 	-> Type yes so that you can use the conda command. 
 	-> You can now activate the installation by sourcing the ~/.bashrc file:
-	--> source ~/.bashrc
+	--> `source ~/.bashrc`
 	-> Verify conda is installed using `conda list` command
 
-### Setting Up Anaconda Environments
+##### Setting Up Anaconda Environments
 	- check to see which versions of Python are available for us to use:
 	-> `conda search "^python$"`
 	-Let’s create an environment using the most recent version of Python 3. We can achieve this by assigning version 3 to the python argument. Let us call the environment as python3_env
