@@ -70,3 +70,9 @@ Now try again:
 	-- > `ssh-copy-id username@remote_server`
 	- > If `ssh-copy-id` is not available, we can use ssh. First use cat command to read contentes of pblic SSH key on our computer. Then pip that through SSH conncetion to the remote server
 	-- >`cat ~/.ssh/id_rsa.pub | ssh username@remote_host "mkdir -p ~/.ssh && touch ~/.ssh/authorized_keys && chmod -R go= ~/.ssh && cat >> ~/.ssh/authorized_keys"`
+
+#### Bloging on Github is easy using [Jekllrb](https://jekyllrb.com/)
+	- You need to install ruby first 
+	- > `sudo apt-get install ruby`
+	- > `sudo apt-get install ruby-dev`
+	- > `sudo gem install bundler jekyll`
